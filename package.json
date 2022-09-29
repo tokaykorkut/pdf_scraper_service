@@ -1,0 +1,44 @@
+{
+  "name": "pdf_scraper_service",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "main": "src/app.js",
+  "scripts": {
+    "dev": "nodemon --exec babel-node src/app.js",
+    "clean": "rimraf dist",
+    "build": "babel src --out-dir dist ",
+    "start": "node --experimental-modules --es-module-specifier-resolution=node src/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Navivest/pdf_scraper_service.git"
+  },
+  "author": "Tokay Korkut",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Navivest/pdf_scraper_service/issues"
+  },
+  "homepage": "https://github.com/Navivest/pdf_scraper_service#readme",
+  "dependencies": {
+    "@google-cloud/language": "^4.3.2",
+    "@google-cloud/storage": "^6.0.1",
+    "@google-cloud/vision": "^2.4.2",
+    "amqplib": "^0.10.0",
+    "pdf.js-extract": "^0.2.0",
+    "pdf2pic": "^2.1.4",
+    "pg": "^8.7.3",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.20.1",
+    "winston": "^3.7.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.17.10",
+    "@babel/core": "^7.17.10",
+    "@babel/node": "^7.17.10",
+    "@babel/preset-env": "^7.17.10",
+    "dotenv": "^16.0.1",
+    "nodemon": "^2.0.16",
+    "rimraf": "^3.0.2"
+  }
+}
